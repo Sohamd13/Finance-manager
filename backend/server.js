@@ -19,7 +19,7 @@ app.get("/", (req, res) => {
 app.use("/api/auth", authRoutes);
 app.use("/api/transactions", transactionsRoutes);
 
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 8080;
 const mongoURI = process.env.MONGO_URI; 
 
 if (!mongoURI) {
